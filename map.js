@@ -23,7 +23,8 @@ function draw(timeStamp){
 	start = timeStamp;
 
 	env.draw(ctx);
-	bot.draw(ctx, "orange", {x: 100, y: 100}, 0);
+	bot.move(2, 0.01);
+	bot.draw(ctx, "orange");
 
 	// FPS calculations
 	const FPS = Math.round((1/dt));
